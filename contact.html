@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact YOKED Gym</h1>
+    <p>Have questions or need advice? Reach out!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="equipment.html">Equipment</a></li>
+      <li><a href="workouts.html">Workouts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <form action="submitted.html" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="ex: John Doe" pattern="^[A-Za-z\\s]{3,30}$" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required pattern="[^@\\s]+@[^@\\s]+\\.[a-zA-Z]{2,}$"><br><br>
+
+      <label for="inquiry">Reason for Contact:</label><br>
+      <select id="inquiry" name="inquiry">
+        <option value="advice">Workout Advice</option>
+        <option value="signup">Membership Inquiry</option>
+        <option value="feedback">Site Feedback</option>
+      </select><br><br>
+
+      <label for="comments">Questions, Comments, or Concerns:</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YOKED Gym. All rights reserved.</p>
+  </footer>
+</body>
+</html>
